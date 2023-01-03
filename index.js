@@ -20,3 +20,23 @@ window.onload = function() {
     }
 }
 
+// newcard
+
+function NewCard() {
+    document.location.reload();
+}
+
+
+// countdown
+
+setTimeout(() => {
+    document.location.reload();
+  }, 10000);
+
+
+  // input height & width
+
+  let inputHeight = document.getElementById("height");
+  let inputWidth = document.getElementById("width");
+
+  console.log(inputHeight, inputWidth)
