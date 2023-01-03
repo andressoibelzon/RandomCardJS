@@ -29,14 +29,23 @@ function NewCard() {
 
 // countdown
 
-setTimeout(() => {
-    document.location.reload();
-  }, 10000);
+// setTimeout(() => {
+//     document.location.reload();
+//   }, 10000);
 
 
   // input height & width
 
-  let inputHeight = document.getElementById("height");
+  let inputSubmit = document.getElementById("submit");
   let inputWidth = document.getElementById("width");
+  let inputHeight = document.getElementById("height");
 
-  console.log(inputHeight, inputWidth)
+  console.log(inputHeight, inputWidth, inputSubmit);
+
+function GuardarValue() {
+    let heightValue = document.getElementById(`height`).value;
+    let widthValue = document.getElementById(`width`).value;
+
+    console.log(heightValue, widthValue)
+}
+  

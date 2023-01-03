@@ -20,11 +20,18 @@
 
         <button onclick="NewCard()">New Card</button> 
 
-        <form action="">
-            <input type="number" id="height" placeholder="insert height">
-            <input type="number" id="width" placeholder="insert width">
-        </form>
 
+          <br></br>
+
+          <!-- height -->
+          <input type="number" name="height" id="height" value="" />
+
+          <!-- width -->
+          <input type="number" name="width" id="width" value="" />
+          <br></br>
+
+          <input type="button" name="submit" value="Send" onclick="GuardarValue()" />
+          
     </div>
 
     <script src="index.js"></script>
