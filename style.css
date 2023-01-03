@@ -11,17 +11,61 @@ body {
     background: white;
     margin: 0 auto;
     margin-top: 15vh;
-    padding: 16px;
     border-radius: 20px;
-    width: 30%;
+    width: 250px;
     height: 400px;
     border: solid black;
-    display: flex;
-
-
 }
 
 .card {
     font-size: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a . ."
+    ". b ."
+    ". . c";
+    height: 100%;
+    place-items: center;
+
 }
 
+#imgUp {
+    grid-area: a;
+}
+
+#numberCard {
+    grid-area: b;
+
+}
+
+#imgDown {
+    grid-area: c;
+    transform: rotate(180deg);
+}
+
+/* .wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c d d d d"
+      "c c c c d d d d";
+    align-items: start;
+  }
+  .item1 {
+    grid-area: a;
+  }
+  .item2 {
+    grid-area: b;
+  }
+  .item3 {
+    grid-area: c;
+  }
+  .item4 {
+    grid-area: d;
+  } */
