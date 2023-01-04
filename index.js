@@ -40,12 +40,11 @@ function NewCard() {
   let inputWidth = document.getElementById("width");
   let inputHeight = document.getElementById("height");
 
-  console.log(inputHeight, inputWidth, inputSubmit);
-
 function GuardarValue() {
-    let heightValue = document.getElementById(`height`).value;
     let widthValue = document.getElementById(`width`).value;
-
+    let heightValue = document.getElementById(`height`).value;
+    let heightCard = document.querySelector(".container").style.height = heightValue + "px";
+    let widthCard = document.querySelector(".container").style.width = widthValue + "px";
     console.log(heightValue, widthValue)
 }
   
